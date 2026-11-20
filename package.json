@@ -1,0 +1,32 @@
+{
+    "name": "@keymailer/bindist",
+    "version": "0.1.0",
+    "description": "client for the bindist binary distribution api",
+    "type": "module",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/KeyMailer/bindist-ts-js-sdk.git"
+    },
+    "files": [
+        "dist"
+    ],
+    "sideEffects": false,
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+        },
+        "./upload": {
+            "types": "./dist/upload.d.ts",
+            "default": "./dist/upload.js"
+        },
+        "./node": {
+            "types": "./dist/node.d.ts",
+            "default": "./dist/node.js"
+        }
+    },
+    "devDependencies": {
+        "@types/bun": "latest",
+        "typescript": "^7"
+    }
+}
